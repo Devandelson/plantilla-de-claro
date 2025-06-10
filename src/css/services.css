@@ -1,0 +1,124 @@
+.services {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #F4F4F4;
+    padding: 20px;
+    color: var(--color1);
+    margin-top: 30px;
+    border-radius: 7px;
+
+    >h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    >.containerSlider {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        >.Itemservices {
+            padding: 25px;
+            width: 300px;
+            flex-grow: 1;
+            min-height: 250px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 1;
+            transition: all 300ms ease;
+
+            >.containerImg {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -2;
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &::after {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                content: '';
+                display: block;
+                background: rgba(0, 0, 0, 0.062);
+                z-index: -2;
+            }
+
+             &::before {
+                position: absolute;
+                width: 20%;
+                height: 110%;
+                top: -10%;
+                left: -30%;
+                content: '';
+                display: block;
+                background: rgba(255, 255, 255, 0.658);
+                z-index: -1;
+                transform: skew(10deg);
+                filter: blur(10px);
+                transition: all 700ms ease;
+            }
+
+            &:hover{
+                transform: scale(1.030) skew(2deg);
+
+                &::before{
+                    left: 120%;
+                }
+            }
+
+            > h3{
+                font-size: 30px;
+                color: white;
+            }
+
+            > .btn_service{
+                border: 2px solid white;
+                width: max-content;
+                padding: 10px 20px;
+                transition: all 100ms linear;
+
+                > a{
+                    text-decoration: none;
+                    color: white;
+                }
+
+                &:hover{
+                    background: white;
+                    color: var(--color1);
+                    transform: scale(1.020);
+
+                    > a{
+                        color:  var(--color1);
+                    }
+                }
+
+                &:active{
+                    background: rgb(206, 202, 202);
+                    color: black;
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+}

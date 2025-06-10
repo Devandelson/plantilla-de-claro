@@ -1,0 +1,142 @@
+footer {
+    background: #1F1D1D;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+
+    >svg {
+        position: absolute;
+        width: 100%;
+        bottom: 100%;
+        left: 0;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    >section {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 15px;
+    }
+
+    >.top {
+        display: flex;
+        align-items: top;
+        gap: 30px;
+        color: white;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        >.itemSubpages {
+            >h4 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            >ul {
+                list-style: none;
+                height: auto;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    >.logo {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+
+        >.left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            width: max-content;
+
+            >img {
+                position: relative;
+            }
+
+            >span {
+                height: 30px;
+                width: 2px;
+                border: none;
+                content: '';
+                display: block;
+                background: white;
+                position: relative;
+                border-radius: 2px;
+            }
+
+            >img:nth-child(3) {
+                width: 180px;
+                height: 60px;
+            }
+        }
+
+        >.right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            >span {
+                padding: 10px;
+                font-size: 20px;
+                background: #DBDBDB;
+                border-radius: 100%;
+                color: #515151;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    >.Entitlement {
+        background: #3C3C3C;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: space-between;
+        margin-top: 15px;
+        flex-wrap: wrap;
+        text-align: center;
+
+        > .moreLinks{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            height: auto;
+            flex-wrap: wrap;
+
+            > a{
+                color: white;
+                text-decoration: none;
+                font-size: 15px;
+            }
+
+             >span {
+                height: 30px;
+                width: 2px;
+                border: none;
+                content: '';
+                display: block;
+                background: white;
+                position: relative;
+                border-radius: 2px;
+            }
+        }
+    }
+}

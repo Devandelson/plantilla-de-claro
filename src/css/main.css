@@ -1,0 +1,32 @@
+main{
+    width: 100%;
+    height: auto;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.defaultContainer1{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 20px;
+    background: #F4F4F4;
+    z-index: 1;
+
+    > h2{
+        font-size: 40px;
+        color: var(--color1);
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    > .homePage{
+        border-radius: 20px;
+    }
+}
+
+.colordefault1{
+    background: white!important;
+}
